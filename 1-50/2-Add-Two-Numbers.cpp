@@ -20,6 +20,13 @@ struct ListNode {
 };
 class Solution {
    public:
+   /**
+    * @brief Sum two linked lists representing numbers.
+    * This solution iterates over all elements of each list, adding the corresponding digits together and saving the result to a new linked list.
+    * @param l1 list 1.
+    * @param l2 list 2.
+    * @return ListNode* the result .
+    */
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         int sum = 0, carry = 0;
         ListNode* res = NULL;
